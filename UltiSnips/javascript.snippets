@@ -31,3 +31,9 @@ endsnippet
 snippet eeq "expect(x).toEqual(y)"
 expect($1).toEqual($2);
 endsnippet
+
+snippet ept "expect promise to do something"
+return $1.then(result => {
+	expect(result).toEqual(true);
+});
+endsnippet
