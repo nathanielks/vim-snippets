@@ -1,0 +1,33 @@
+snippet desc "describe"
+describe('$0', () => {
+	$1
+});
+endsnippet
+
+snippet test "test"
+test('$0', () => {
+	$1
+});
+endsnippet
+
+snippet bee "beforeEach"
+beforeEach(() => {
+	$0
+});
+endsnippet
+
+snippet afe "afterEach"
+afterEach(() => {
+	$0
+});
+endsnippet
+
+# expect
+
+snippet ebe "expect(x).toBe(y)"
+expect($1).toBe($2);
+endsnippet
+
+snippet eeq "expect(x).toEqual(y)"
+expect($1).toEqual($2);
+endsnippet
